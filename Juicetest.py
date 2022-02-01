@@ -67,5 +67,5 @@ def test_calculate_discount_12():
 def test_calculate_discount_13():
     with pytest.raises(ValueError) as exception_info:
         assert calculate_discount(3, "XXX")
-    assert str(exception_info.value) == "amount must be a Boolean"
+    assert str(exception_info.value) == "member must be a Boolean"
     assert exception_info.type == ValueError
